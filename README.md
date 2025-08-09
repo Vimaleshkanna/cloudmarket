@@ -14,7 +14,9 @@ This is a full-stack e-commerce web application built with:
 ![Alt text](srini23.jpg?raw=true "Title")
 
 
-
+```json
+{}
+```
 
 ## Features
 ### User Authentication

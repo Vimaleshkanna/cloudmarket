@@ -1,4 +1,4 @@
-const client = require('../config/contentful.config');
+const { client } = require('../config/contentful.config');
 
 const listProducts = async (req, res) => {
     try {

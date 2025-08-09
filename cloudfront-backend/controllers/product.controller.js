@@ -1,4 +1,6 @@
 const { client } = require('../config/contentful.config');
+const logger = require('../utils/logger');
+
 
 const listProducts = async (req, res) => {
     try {
@@ -21,6 +23,7 @@ const listProducts = async (req, res) => {
         });
 
     } catch (err) {
+        logger.error('Product list error :: ' + error);
         return res.status(500).json({ message: 'Server error' });
     }
 }

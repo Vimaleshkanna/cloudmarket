@@ -1,6 +1,8 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const { client, managementClient } = require('../config/contentful.config');
+const logger = require('../utils/logger');
+
 
 const register = async (req, res) => {
     try {
@@ -57,13 +59,14 @@ const register = async (req, res) => {
         });
 
     } catch (error) {
-        console.error('Error registering user:', error);
+        logger.error('Error registering user :: ' + error);
         return res.status(500).json({ message: 'Server error' });
     }
 };
 
 const login = async (req, res) => {
     try {
+
         const { email, password } = req.body;
 
         // Validate input
@@ -82,7 +85,6 @@ const login = async (req, res) => {
             return res.status(401).json({ message: 'User email not found' });
         }
 
-        console.log("password :: " + JSON.stringify(user?.['items'][0]['fields']));
         // Compare password
         const userDetails = user?.['items'][0]['fields'];
         const isMatch = await bcrypt.compare(password, userDetails['password']);
@@ -105,8 +107,6 @@ const login = async (req, res) => {
         // Store session data
         req.session.sessionObj = userObj;
 
-        console.log("req.session.sessionObj :: " +  req.session.sessionObj)
-
         // Response
         return res.status(200).json({
             message: 'Login successful',
@@ -115,7 +115,7 @@ const login = async (req, res) => {
         });
 
     } catch (error) {
-        console.error('Error logging in:', error);
+        logger.error('Error logging in :: ' + error);
         return res.status(500).json({ message: 'Server error' });
     }
 };

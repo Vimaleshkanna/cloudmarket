@@ -15,11 +15,54 @@ This is a full-stack e-commerce web application built with:
 
 
 ## Features
-### User Authentication
-	Signup with name, email, password, address and phone number
- 	Login using JWT-based authentication
+
+## User Registration (Sign Up)
+
+Accepts name, email, password, zipcode, addressOne, addressTwo, phoneno as input.
+
+Passwords are hashed using bcrypt before storing in the contentful.
+
+we integrated contentful API's in our Login and Regiter
+
+Validates unique email to prevent duplicate accounts.
+
+Returns a success response upon successful registration.
+
+## User Login
+
+Accepts email and password.
+
+Validates credentials against stored hashed passwords.
+
+Generates a JWT access token upon successful authentication.
+
+Token includes user information (excluding password) for session management.
+
+Token-Based Authentication
+
+JWT tokens are signed with a secret key from environment variables.
+
+## Token expiry is configured for security.
+
+Middleware added to verify token for protected routes.
+
+## Error Handling
+
+Centralized error handling middleware for consistent error responses.
+
+Proper HTTP status codes returned for authentication failures.
+
+## Security Measures
+
+Password hashing with salt using bcrypt.
+
+Input validation for required fields.
+
+Environment-based secret management via .env.
+
+
 ## Product Listing
-	View all available products from the database
+	View all available products from the contentful
  	Search and Filter products
 	View product details
 ## Shopping Cart

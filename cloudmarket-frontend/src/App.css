@@ -1,7 +1,30 @@
 .App {
   text-align: center;
 }
+.object-image {
+  object-fit: cover;
+  height: 200px !important;
+}
+.quantity-control {
+  width: 125px !important;
+}
 
+.card-body-cart {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+
+}
+.card-cart-title {
+  width: 200px;
+}
+.card-text-price {
+  width: 300px;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

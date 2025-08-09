@@ -1,4 +1,6 @@
 const contentful = require('contentful');
+const contentfulManagementClient = require('contentful-management');
+
 
 const client = contentful.createClient({
     space: process.env.CONTENTFUL_SPACE,
@@ -6,4 +8,8 @@ const client = contentful.createClient({
     accessToken: process.env.CONTENTFUL_ACCESSTOKEN
 })
 
-module.exports = client;
+const managementClient = contentfulManagementClient.createClient({
+    accessToken: process.env.CONTENTFUL_MANAGEMENT_ACCESSTOKEN
+});
+
+module.exports = { client, managementClient };

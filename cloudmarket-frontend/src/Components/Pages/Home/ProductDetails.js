@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import {algoliasearch} from 'algoliasearch';
+import { algoliasearch } from 'algoliasearch';
 import { ALGOLIA_APP_NAME, ALGOLIA_SEARCH_API_KEY } from '../../../config/api';
 
 const ProductDetails = () => {
@@ -8,7 +8,7 @@ const ProductDetails = () => {
   const [product, setProduct] = useState(null);
 
   const searchClient = algoliasearch(ALGOLIA_APP_NAME, ALGOLIA_SEARCH_API_KEY);
-  const index = searchClient.initIndex('products');
+  const index = searchClient.initIndex('products')
 
   useEffect(() => {
     index.getObject(id)

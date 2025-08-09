@@ -38,10 +38,10 @@ This is a full-stack e-commerce web application built with:
 "name":String
 "email" String
 "password": hash(bcrypt),
-"zipcode": String,
-"address1": String,
-"address2": String,
-"phoneno": String
+"zipCode": String,
+"addressOne": String,
+"addressTwo": String,
+"phoneNo": String
 "role": String
 }
 ```

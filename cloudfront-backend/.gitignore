@@ -1,6 +1,10 @@
 # Node.js dependencies
 node_modules/
+.env.development
 
 # Logs
 logs/
 *.log
+
+# Environment files
+.env*

@@ -6,14 +6,15 @@ import Register from '../Components/Pages/Register'
 import CartDetails from '../Components/Pages/CartDetails';
 import PrivateRoute from './PrivateRoute'
 import Checkout from '../Components/Pages/Checkout'
+import { LoginContainer, RegisterContainer } from '../Redux/Containers/authContainer'
 
 const AppRoutes = () => {
     return (
         <Routes>
             {/* Public */}
             <Route path='/' element={<Home />} />
-            <Route path='/login' element={<Login />} />
-            <Route path='/register' element={<Register />} />
+            <Route path='/login' element={<LoginContainer />} />
+            <Route path='/register' element={<RegisterContainer />} />
             <Route path='/cart-history' element={<CartDetails/>} />
             {/* Product details */}
             {/* Private */}

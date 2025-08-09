@@ -5,7 +5,7 @@ export default function Products() {
     const [products, setProducts] = useState([]);
     useEffect(()=> {
         const myHeaders = new Headers();
-myHeaders.append("authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic3VyZXNoIiwiZW1haWwiOiJzdXJlc2huZXdAZ21haWwuY29tIiwicm9sZSI6IlVzZXIiLCJpYXQiOjE3NTQ3NDA3MTAsImV4cCI6MTc1NDc0NDMxMH0.71WcPtVhwDRMO_htxv1F2aUDhQgRWzdgtMvZvPKIaKk");
+myHeaders.append("authorization",localStorage.getItem('token'));
 myHeaders.append("Content-Type", "application/json");
 const requestOptions = {
   method: "POST",

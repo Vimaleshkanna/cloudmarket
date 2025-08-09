@@ -9,6 +9,9 @@ This is a full-stack e-commerce web application built with:
  	Deployment: AWS(Ec2 with docker), Gitlab
 
 -----------------------------------------------------
+# Architecture
+
+
 
 ## Features
 ### User Authentication

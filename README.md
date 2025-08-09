@@ -11,6 +11,9 @@ This is a full-stack e-commerce web application built with:
 -----------------------------------------------------
 # Architecture
 
+![Alt text](srini23.jpg?raw=true "Title")
+
+
 
 
 ## Features

@@ -1,3 +1,30 @@
+# Steps to run the front-end
+## npm install
+## npm start
+
+
+# Steps to run the back-end
+## npm install
+## add .env.development file
+```json PORT=5000
+DATABASE_NAME='Ecommerce'
+DATABASE_USER_NAME='Ecommerce'
+DATABASE_PASSWORD='Ecommerce2025@'
+DATABASE_HOST='DESKTOP-BGIJ7UQ\MSSQLSERVER02'
+DATABASE_DIALECT='mssql'
+NODE_ENV='development'
+SESSION_SECRECT_KEY='SessionSecretKey'
+JWT_SECRET='EcommerceJWTSecrect'
+CONTENTFUL_SPACE='fby9g2bb0y33'
+CONTENTFUL_ENVIRONMENT='master'
+CONTENTFUL_ACCESSTOKEN='03J3THDTIvkkbEP-Rnzr-v3WKViQHJUqc6UP26W0M7Q'
+CONTENTFUL_MANAGEMENT_ACCESSTOKEN='CFPAT-ccNxjO9QIBxvSJzbUQn2yKVRF2lEfOhrDKZtlzpUA9s'
+```
+## node app.js
+
+# Branch struture
+## master -> main(Branch to run)
+
 # cloudmarket (Reactjs + nodejs + mssql)
 -------------------------------------------------
 This is a full-stack e-commerce web application built with:
@@ -129,4 +156,16 @@ Environment-based secret management via .env.
   
 }]```
 
- 	
+# Output screenshots
+
+<img width="1824" height="927" alt="image" src="https://github.com/user-attachments/assets/5366b069-0e43-44b9-9d9f-cb1f10208af4" />
+
+<img width="1898" height="895" alt="image" src="https://github.com/user-attachments/assets/fa5a46c5-961d-4f3f-b09c-ed4e32a450db" />
+
+<img width="1850" height="936" alt="image" src="https://github.com/user-attachments/assets/7f488b0f-2c28-4aa6-9bb3-8e12f643b112" />
+
+<img width="1919" height="973" alt="image" src="https://github.com/user-attachments/assets/75850321-f71c-4cc1-aedf-66d45ee4965e" />
+
+
+
+

@@ -42,7 +42,30 @@ This is a full-stack e-commerce web application built with:
 "address1": String,
 "address2": String,
 "phoneno": String
+"role": String
 }
 ```
-	
+
+### Role
+```json
+{
+"name":String,
+"access": String,
+}
+```
+
+### Product
+
+```json
+{
+  "product_id": "12345",
+  "name": "Wireless Bluetooth Headphones",
+  "description": "Premium noise-cancelling wireless headphones with superior sound quality and long-lasting battery life.",
+  "price": 129.99,
+  "availability": "In Stock",
+  "created_at": "2025-08-09T12:00:00Z",
+  "updated_at": "2025-08-09T12:00:00Z",
+  "is_active": true,
+  
+}```
  	

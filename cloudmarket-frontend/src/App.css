@@ -9,10 +9,21 @@
   width: 125px !important;
 }
 
+.card {
+  margin:20px 10px;
+}
+
 .card-body-cart {
   flex-direction: row;
   display: flex;
   align-items: center;
+
+}
+.ellipsis {
+  white-space: nowrap;       /* Prevents text from wrapping */
+  overflow: hidden;          /* Hides the overflowing text */
+  text-overflow: ellipsis;   /* Adds ellipsis (...) when the text overflows */
+  width: 200px;              /* Set a fixed width or max-width */
 
 }
 .card-cart-title {

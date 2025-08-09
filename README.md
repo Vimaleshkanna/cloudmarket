@@ -14,10 +14,6 @@ This is a full-stack e-commerce web application built with:
 ![Alt text](srini23.jpg?raw=true "Title")
 
 
-```json
-{}
-```
-
 ## Features
 ### User Authentication
 	Signup with name, email, password, address and phone number
@@ -34,5 +30,19 @@ This is a full-stack e-commerce web application built with:
 	Checkout with billing/Shipping info
 	Place order and save to DB
  	Order confirmation
+
+## Models
+### User
+```json
+{
+"name":String
+"email" String
+"password": hash(bcrypt),
+"zipcode": String,
+"address1": String,
+"address2": String,
+"phoneno": String
+}
+```
 	
  	
